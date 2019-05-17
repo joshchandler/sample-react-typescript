@@ -1,0 +1,2 @@
+//intentionally blank so that react-ts doesn't prevent build. Use tslint.build.json
+{}
