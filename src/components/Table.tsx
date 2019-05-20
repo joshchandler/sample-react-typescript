@@ -32,10 +32,10 @@ class Table extends React.Component<IProps> {
           </tr>
         </thead>
         <tbody>
-          {data.map((user) => (
+          {data.map((user, i) => (
             <tr>
               {columns.map((column, j) => (
-                <TableField value={user[column.value]} type={column.value} />
+                <TableField value={user[column.value]} key={`${i}--${j}`} type={column.value} />
               ))}
             </tr>
           ))}

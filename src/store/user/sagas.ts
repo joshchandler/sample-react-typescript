@@ -3,11 +3,11 @@ import * as request from "request";
 import * as actions from "./actions";
 import { UserActionTypes } from "./types";
 
-function get() {
+export function get() {
   const url = "https://jsonplaceholder.typicode.com/users";
 
   return new Promise((resolve, reject) => {
-    request(`${url}`, (err: string, response: any, body: string) => {
+    request.get(`${url}`, (err: string, response: any, body: string) => {
       if (err) {
         reject(err);
       } else if (response.statusCode >= 300) {

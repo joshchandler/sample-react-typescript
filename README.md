@@ -11,6 +11,11 @@ yarn install
 yarn start
 ```
 
+### Tests
+```
+yarn test
+```
+
 ### High Level
 
 This repository focuses on modularity of a typical react project.  It includes client-side routing, redux sagas for state management and data retrieval, and various performance enhancements like code-splitting by asynchronously loading pages if required by a route.
